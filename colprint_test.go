@@ -29,7 +29,7 @@ func TestRegistryBasic(t *testing.T) {
 		Int((*testPerson).GetAge).
 		Register()
 
-	fields := reg.ListFields()
+	fields := reg.ListFields(true) // sorted for test
 	if len(fields) != 2 {
 		t.Errorf("expected 2 fields, got %d", len(fields))
 	}

@@ -116,9 +116,6 @@ type Field[T any] struct {
 	// Precision specifies decimal places for Float fields
 	Precision int
 
-	// Category groups related fields for help display
-	Category string
-
 	// Value extractors - only one should be set based on Kind
 	GetString func(*T) string
 	GetInt    func(*T) int
