@@ -7,7 +7,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/example/colprint"
+	"github.com/arozenfe/colprint"
 )
 
 // Person is our example domain type.
